@@ -13,12 +13,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--bootstrap-->
-	  <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" >
-    <link href="assets/bootstrap/css/bootstrap.css.map" rel="stylesheet" >
-    <link href=assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="assets/style.css" type="text/css">
-    <script src="assets/bootstrap/js/jquery.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	  <link href="<?php echo base_url("assets/bootstrap/css/bootstrap.css"); ?>" rel="stylesheet" >
+    <link href="<?php echo base_url("assets/bootstrap/css/bootstrap.css.map"); ?>" rel="stylesheet" >
+    <link href="<?php echo base_url("assets/bootstrap/css/bootstrap.min.css"); ?>" rel="stylesheet" >
+    <link rel="stylesheet" href="<?php echo base_url("assets/style.css"); ?>" type="text/css">
+    <script src="<?php echo base_url("assets/bootstrap/js/jquery.js"); ?>"></script>
+    <script src="<?php echo base_url("assets/bootstrap/js/bootstrap.min.js"); ?>"></script>
 </head>
 <body id="body">
 
@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      <span class="icon-bar"></span>
                  </button>
                  <a class="navbar-brand" href="#">
-                        <img src="assets/img/fti.png" width="50" height="45" class="logo" alt="">
+                        <img src="<?php echo base_url('assets/img/fti.png'); ?>" width="50" height="45" class="logo" alt="">
                 </a>
                  </div>
 
@@ -76,7 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
              <div class="item active">
                  <a href="#">
                  <!-- Set the first background image using inline CSS below. -->
-                 <div class="fill" style="background-image:url('assets/img/ti1.JPG');"></div>
+                 <div class="fill" style="background-image:url('<?php echo base_url('assets/img/ti1.JPG'); ?>');"></div>
                  <div class="carousel-caption">
 
                  </div>
@@ -85,7 +85,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
              <div class="item">
                  <a href="#">
                  <!-- Set the second background image using inline CSS below. -->
-                 <div class="fill" style="background-image:url('assets/img/blibli.jpg');"></div>
+                 <div class="fill" style="background-image:url('<?php echo base_url('assets/img/blibli.jpg'); ?>');"></div>
                  <div class="carousel-caption">
 
                  </div>
@@ -94,7 +94,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
              <div class="item">
                  <a href="#">
                  <!-- Set the third background image using inline CSS below. -->
-                 <div class="fill" style="background-image:url('assets/img/Ti3.jpg');"></div>
+                 <div class="fill" style="background-image:url('<?php echo base_url('assets/img/Ti3.jpg'); ?>');"></div>
                  <div class="carousel-caption">
 
                  </div>
@@ -103,7 +103,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <div class="item">
                  <a href="#">
                  <!-- Set the third background image using inline CSS below. -->
-                 <div class="fill" style="background-image:url('assets/img/blibli.jpg');"></div>
+                 <div class="fill" style="background-image:url('<?php echo base_url('assets/img/blibli.jpg'); ?>');"></div>
                  <div class="carousel-caption">
                  </div>
                  </a>
@@ -127,7 +127,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div class="thumbnail">
-              <img src="assets/img/airmas.jpg" alt="">
+              <img src="<?php echo base_url('assets/img/airmas.jpg'); ?>" alt="">
                 <div class="caption">
                   <h4>Thumbnail label</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
@@ -138,7 +138,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div class="thumbnail">
-              <img src="assets/img/lowongan2.jpg" alt="">
+              <img src="<?php echo base_url('assets/img/lowongan2.jpg'); ?>" alt="">
                 <div class="caption">
                   <h4>Thumbnail label</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
@@ -149,7 +149,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div class="thumbnail">
-              <img src="assets/img/lowongan3.jpg" alt="">
+              <img src="<?php echo base_url('assets/img/lowongan3.jpg'); ?>" alt="">
                 <div class="caption">
                   <h4>Thumbnail label</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
@@ -165,7 +165,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div class="thumbnail">
-              <img src="assets/img/kerjasama1.png" alt="">
+              <img src="<?php echo base_url('assets/img/kerjasama1.png'); ?>" alt="">
                 <div class="caption">
                   <h4>Thumbnail label</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
@@ -176,7 +176,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div class="thumbnail">
-              <img src="assets/img/kerjasama2.jpg" alt="">
+              <img src="<?php echo base_url('assets/img/kerjasama2.jpg'); ?>" alt="">
                 <div class="caption">
                   <h4>Thumbnail label</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
@@ -187,7 +187,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div class="thumbnail">
-              <img src="assets/img/kerjasama3.png" alt="">
+              <img src="<?php echo base_url('assets/img/kerjasama3.png'); ?>" alt="">
                 <div class="caption">
                   <h4>Thumbnail label</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
@@ -203,7 +203,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div class="thumbnail">
-              <img src="assets/img/intern1.jpg" alt="">
+              <img src="<?php echo base_url('assets/img/intern1.jpg'); ?>" alt="">
                 <div class="caption">
                   <h4>Thumbnail label</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
@@ -214,7 +214,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div class="thumbnail">
-              <img src="assets/img/intern2.jpg" alt="">
+              <img src="<?php echo base_url('assets/img/intern2.jpg'); ?>" alt="">
                 <div class="caption">
                   <h4>Thumbnail label</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
@@ -225,7 +225,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
             <div class="thumbnail">
-              <img src="assets/img/intern3.jpg" alt="">
+              <img src="<?php echo base_url('assets/img/intern3.jpg'); ?>" alt="">
                 <div class="caption">
                   <h4>Thumbnail label</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
@@ -254,7 +254,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="footer-single">
 
                                 <a class="navbar-brand ukdwfooter" href="#">
-                                    <img src="assets/img/ukdw.png" width="50" height="45" class="logo" alt="">
+                                    <img src="<?php echo base_url('assets/img/ukdw.png'); ?>" width="50" height="45" class="logo" alt="">
                                 </a>
                                 <h2>Universitas Kristen</h2>
                                 <h2>Duta Wacana</h2>
@@ -311,9 +311,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="footer-title"><h2>Contact Information</h2></div>
                     <div class="col-sm-12">
                         <ul class="list-inline footer-social">
-                            <li><a href=""><img src="assets/img/2.png" width="30" height="35" class="logo" alt=""></a></li>
-                            <li><a href=""><img src="assets/img/1.png" width="30" height="35" class="logo" alt=""></a></li>
-                            <li><a href=""><img src="assets/img/4.png" width="30" height="35" class="logo" alt=""></a></li>
+                            <li><a href=""><img src="<?php echo base_url('assets/img/2.png'); ?>" width="30" height="35" class="logo" alt=""></a></li>
+                            <li><a href=""><img src="<?php echo base_url('assets/img/1.png'); ?>" width="30" height="35" class="logo" alt=""></a></li>
+                            <li><a href=""><img src="<?php echo base_url('assets/img/4.png'); ?>" width="30" height="35" class="logo" alt=""></a></li>
                         </ul>
                     </div>
                 </div>
