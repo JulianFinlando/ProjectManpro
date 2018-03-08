@@ -19,6 +19,8 @@
 
 <h1>Selamat datang</h1>
 <button type="button" class="btn btn-success">Login</button>
+<button type="button" class="btn btn-primary">Login</button>
+<button type="button" class="btn btn-danger">Login</button>
 
 </body>
 </html>

@@ -3975,6 +3975,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  color: #fff;
 }
 .nav > li {
   position: relative;
@@ -4274,7 +4275,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  margin-top: -15px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -4322,6 +4323,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav {
   margin: 7.5px -15px;
+  color: #fff;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -5000,7 +5002,7 @@ a.badge:focus {
 }
 .thumbnail {
   display: block;
-  padding: 4px;
+  padding: 8px;
   margin-bottom: 20px;
   line-height: 1.42857143;
   background-color: #fff;
@@ -5009,7 +5011,9 @@ a.badge:focus {
   -webkit-transition: border .2s ease-in-out;
        -o-transition: border .2s ease-in-out;
           transition: border .2s ease-in-out;
+  
 }
+
 .thumbnail > img,
 .thumbnail a > img {
   margin-right: auto;
