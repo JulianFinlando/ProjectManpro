@@ -32,13 +32,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <hr>
 
             <!-- form for login -->
-            <form class="form-signin">
+            <form class="form-signin" method="post" action="<?php echo base_url('index.php/Welcome/login_validation'); ?>">
                 <span id="reauth-email" class="reauth-email"></span>
                 <p class="input_title">Username</p>
-                <input type="text" id="inputEmail" class="login_box" placeholder="Username" required autofocus>
+                <input type="text" name="username" id="inputEmail" class="login_box" placeholder="Username" autofocus>
+                <span class="text-danger"><?php echo form_error('username'); ?></span>
+
                 <p class="input_title">Password</p>
-                <input type="password" id="inputPassword" class="login_box" placeholder="********" required>
-                <button class="btn btn-lg btn-primary" type="submit">Login</button>
+                <input type="password" name="password" id="inputPassword" class="login_box" placeholder="********" autofocus>
+                <span class="text-danger"><?php echo form_error('password'); ?></span>
+                <button class="btn btn-lg btn-primary" type="submit" name="submit">Login</button>
+                <?php 
+                    echo '<label class="text-danger">'.$this->session->flashdata("error").'</label>';
+                 ?>
             </form><!-- /form -->
         </div><!-- /card-container -->
     </div><!-- /container -->

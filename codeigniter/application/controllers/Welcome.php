@@ -24,6 +24,60 @@ class Welcome extends CI_Controller {
 	}
 
 	public function login(){
-		$this->load->view('login_view');
+		
+		$data['title'] = "Login";
+		$this->load->view('login_view', $data);
+	}
+
+	function login_validation(){
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('username', 'Username', 'required');
+		$this->form_validation->set_rules('password', 'Password', 'required');
+		if($this->form_validation->run())
+		{
+			//true
+			$username = $this->input->post('username');
+			$password = $this->input->post('password');
+			
+			//model function
+			$this->load->model('welcome_model');
+			if($this->welcome_model->can_login($username, $password))
+			{
+				$session_data = array(
+					'username' => $username
+				);
+				$this->session->set_userdata($session_data);
+				redirect(base_url() . 'index.php/welcome/enter');
+			}
+			else
+			{
+				$this->session->set_flashdata('error', 'Invalid Username and Password');
+				redirect(base_url() . 'index.php/welcome/login');
+			}	
+		}
+		else
+		{
+			//false
+			$this->login();
+		}
+	}
+
+	function enter()
+	{
+		if($this->session->userdata('username') != '')
+		{
+			echo '<h2>Welcome - '.$this->session->userdata('username').'</h2>';
+			echo '<label><a href="'.base_url(). 'index.php/welcome/logout">Logout</a></label>';
+		}
+		else
+		{
+			redirect(base_url() . 'index.php/welcome/login');
+		}	
+	}
+
+	function logout()
+	{
+		$this->session->unset_userdata('username');
+		redirect(base_url() . 'index.php/welcome/login');
 	}
 }
